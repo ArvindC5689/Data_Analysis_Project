@@ -1,6 +1,6 @@
 # SabermerticsFinalProject
 
-Final Project
+## BSES (Batter Situational Efficiency Stat)
 
 BSES stat
 
