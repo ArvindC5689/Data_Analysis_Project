@@ -60,7 +60,7 @@ In terms of comparing BSES to other stats like BA or SLG or OBP, here are the co
 - BSES vs. OBP = .603
 - BSES vs. H = .555
 
-So the strongest correlation is between BSES and SLG and this makes sense because BSES is slightly based off of the same formula used to calculate SLG. I'm surprised that the correlation for SLG is higher than that of TB though, because BSES and TB reward home runs greatly. This may be the situation factor's effect, however, since I said in the beginning that stats like TB don't take the actual situation into effect when the batter hits a home run. 
+So the strongest correlation is between BSES and SLG and this makes sense because BSES is slightly based off of the same formula used to calculate SLG. I'm surprised that the correlation for SLG is higher than that of TB though, because BSES and TB reward home runs greatly. This may be the situation factor's effect, however, since I said in the beginning that stats like TB don't take the actual situation into effect when the batter hits a home run. In any case, all the stats have some positive correlation with BSES. However since there is the Situation Factor, we can't be 100% confident in saying that a person with a good BA or OBP will have a good BSES score, a claim which is supported by the correlation coefficient. 
 
 The data that I used to calculate all the major stats came from 2010-2013 Retrosheet Data. The Queries for the CSV files can be found in the repository. 
 
