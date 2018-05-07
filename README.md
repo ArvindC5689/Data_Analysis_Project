@@ -11,7 +11,7 @@ Each of these components have their own specifications and will be described in 
 
 The first, and probably most important, component of BSES is the Situation Factor. The Situation Factor is calculated as:
 
-**_Inning/(|Home Score - Away Score|+1)_**  (The inning count divided by the absolute value of the score difference, plus 1)
+**Inning/(|Home Score - Away Score|+1)**  (The inning count divided by the absolute value of the score difference, plus 1)
 
 The Situation Factor is the main stat that takes into account the situation that the batter is in when he is at plate. The extra "+1" in the denominator is to account for the situation where the the home and away score are equal, so that we don't have to worry about division by zero. For example if it is the 3rd inning and the home team score is 4 and the away team score is 5, then the situation factor would be 1.5 since the difference between the home and away score is 2 and it is the third inning. This is the component that tries to account for situational differences. As the game goes on and the inning becomes larger, then positive plays become more valuable and the Situation Factor accounts for that. Also, if the score difference is high and it is early in the game, then the situational factor will be small. If the score difference is low and it is late in the game, then the Situational Factor will be much larger. 
 
@@ -49,6 +49,18 @@ In terms of the values of BSES, here are the value ranges and the evaluation of 
 
 BSES can also be negative. If that is the case for a player then it means that they consistently stike out and don't get very many RBIs in key situations.
 
+In terms of comparing BSES to other stats like BA or SLG or OBP, here are the correlation coefficients:
+
+-BSES vs. PA: .512
+-BSES vs. RBIs: .703
+-BSES vs. AB: .506
+-BSES vs. TB: .649
+-BSES vs. SLG: .870
+-BSES vs. BA: .584
+-BSES vs. OBP: .603
+-BSES vs. H: .555
+
+So the strongest correlation is between BSES and SLG and this makes sense because BSES is slightly based off of the same formula used to calculate SLG. I'm surprised that the correlation for SLG is higher than that of TB though, because BSES and TB reward home runs greatly. This may be the situation factor's effect, however since like I said in the beginning that stats like TB don't take the actual situation into effect when the batter hits a home run. 
 
 
 
