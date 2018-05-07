@@ -19,6 +19,18 @@ The RBI Efficiency is the ratio between the total number of the RBIs that the ba
 
 The final component is the Event Score. The Event score is the performance component of BSES. The Event Score is based on the outcome of the plate appearence. Here is the table for the each event score:
 
+- Strikeout: (-0.5) points
+- Generic Out: (-0.2) points
+- Walk: 0.3 points
+- Hit By Pitch: 0.2 points
+- Single: 1 point
+- Double: 2 points
+- Triple: 3 points
+- Home Run: 4 points
+- Any Other Event: 0 points 
+
+So for example if
+
 
 
 Link to Website: http://sites.simbla.com/a4d52192-959f-59fd-b922-64e17fb73b37/Home
