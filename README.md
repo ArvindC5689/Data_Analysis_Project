@@ -69,4 +69,6 @@ The data that I used to calculate all the major stats came from 2010-2013 Retros
 
 Link to Website: http://sites.simbla.com/a4d52192-959f-59fd-b922-64e17fb73b37/Home
 
+Unfortunately my video file randomly got corrupted, so have to find better sceencast and reshoot. Will try to get it up soon.
+
 
