@@ -3,9 +3,9 @@
 ## BSES (Batter Situational Efficiency Stat)
 The BSES stat is a stat that is designed to evaluate both performance while taking the situation into account. The stat sets out to create a way to compare players situational performance using only one stat. This stat is important because of the fact that it looks at the situation that the batter is in. Other stats like BA or SLG or OBP evaluate performance, but they do not take into account what the situation was when the batter was at bat. In some situations, RBIs and the ability to hit become much more important. For example if the score is 14-0 at the top of the 2nd or 3rd inning and a batter for the winning team hits a home run, that home run is not really that impactful, since the the score deficit was already so large. On the other hand if the score is tied and its the bottom of the 10th inning and a team hits a home run, that home run is much more important because it won the game. Both of these situations are very different, however stats like BA or SLG or OBP treat each of these scenarios exactly the same. This might miake for some misleading evaluations of players. This is the problem that BSES tries to eliminate. 
   
-BSES is an event based stat. What this means is that every time a batter is at the plate, he is assigned a numerical value at the end of that plate appearance. This value is calculated with 3 main parts: **Situation Factor**, **RBI Efficiency** and the **Event Score**. The formula for the value assigned to the plate appearance is as follows:
+BSES is an event based stat. What this means is that every time a batter is at the plate, he is assigned a numerical value called the situation score at the end of that plate appearance. This value is calculated with 3 main parts: **Situation Factor**, **RBI Efficiency** and the **Event Score**. The formula for the value assigned to the plate appearance is as follows:
 
-Situation Factor x (RBI Efficiency + Event Score)
+Situation Score = Situation Factor x (RBI Efficiency + Event Score)
 
 Each of these components have their own specifications and will be described in the following paragraphs.
 
@@ -29,7 +29,28 @@ The final component is the Event Score. The Event score is the performance compo
 - Home Run: 4 points
 - Any Other Event: 0 points 
 
-So for example if
+This scoring system is very similar to the total bases stat that is used to calculate SLG, but includes extra aspects. The events that have a non-zero event score are events that can be attributed to the skill of the player and events that can result in an RBI. Other stats like a passed ball or a wild pitch are not counted because they cannot be attributed to the batter or result in an RBI, which is why they have an event score of 0.
+
+Each batter has a situation score assigned to his plate appearance and his cumulative situational score is the sum of the situational scores for all of his plate appearances. To calculate the actual BSES stat for a certain player you need to take the cumulative situational score of the player and divide it by the total number of plate appearances. As an example from 2010 to 2013, Mike Trout had 1525 plate appearances and a cumulative situation score of 1140.72. 1140.72/1525 yields a BSES score of .750.
+
+In terms of the values of BSES, here are the value ranges and the evaluation of the ranges:
+
+- 1.00 and greater: Legendary and guarenteed Hall of Fame player
+- .900 to 1.00: Upper elite and most likely Hall of Fame player
+- .800 to .900: Elite and possible candidate for Hall of Fame
+- .700 to .800: Lower elite and reliable player
+- .600 to .700: Above average, good player and starter
+- .500 to .600: Pretty average player
+- .400 to .500: Below average player
+- .300 to .400: Pretty poor player, needs to improve
+- .200 to .300: Way below average and might need to be benched
+- .100 to .200: Very underwhelming player
+- Anything Below .100: Player is seriously hurting the team and may need to be released or demoted
+
+BSES can also be negative. If that is the case for a player then it means that they consistently stike out and don't get very many RBIs in key situations.
+
+
+
 
 
 
