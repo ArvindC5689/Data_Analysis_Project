@@ -173,3 +173,11 @@ left join id j on j.id = e.BAT_ID
 GROUP BY j.first, j.last, e.BAT_ID
 
 
+
+#QUERY THAT GETS FULL EVENTS.CSV FILE
+Select j.first as 'First' , j.last as 'Last', e.INN_CT as 'Inning', e.HOME_SCORE_CT'Home Score', e.AWAY_SCORE_CT as 'Away Score', (e.MaxRBI - 1) as 'Runners on Base',e.EVENT_CD as 'Event Outcome',n.LONGNAME_TX, e.RBI_CT as 'RBIs Scored',e.MaxRBI as 'Max RBIs Possible', e.SitFactor as 'Situational Factor', e.EventScore, e.BES as 'Situational Score' from events e
+left join id j on j.id = e.BAT_ID
+inner join lkup_cd_event n on n.VALUE_CD = e.EVENT_CD
+
+
+
