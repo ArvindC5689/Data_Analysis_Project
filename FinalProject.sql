@@ -166,7 +166,7 @@ WHERE SF_FL = 'T'
 
 
 
-#QUERY THAT GETS FULL CSV FILE
+#QUERY THAT GETS FULL BSES.CSV FILE
 select j.first as 'First', j.last as 'Last', e.BAT_ID as 'BatterID', COUNT(BAT_ID) as 'PA',SUM(RBI_CT) as 'RBI', SUM(e.AtBatCT) as 'AB', SUM(e.H_CD) as 'TB', (SUM(e.H_CD)/SUM(e.AtBatCT)) as 'SLG', SUM(e.HitCount) as 'H', (SUM(e.HitCount)/SUM(e.AtBatCT)) as 'BA', (SUM(e.OBP_Numerator)/SUM(e.OBP_Denominator)) as 'OBP', ROUND(SUM(e.BES)/COUNT(e.BAT_ID),4) as 'BSES', ROUND(SUM(e.BES),4) as 'CumulativeBSES' from events e 
 left join id j on j.id = e.BAT_ID
 
